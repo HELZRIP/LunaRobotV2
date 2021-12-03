@@ -7,7 +7,7 @@ from pyrogram import __version__ as pyrover
 from lunaBot.events import register as MEMEK
 from lunaBot import telethn as tbot
 
-PHOTO = "https://telegra.ph/file/7c3c26e0ed938aec91209.jpg"
+PHOTO = "https://telegra.ph/file/6277826076aa3cf9c5f4b.jpg"
 
 @MEMEK(pattern=("/mhelp"))
 async def awake(event):
@@ -25,5 +25,5 @@ async def awake(event):
   LUNA += "• /control - **open the player settings panel** \n"
   LUNA += "• /reload - **To Refresh admin list** \n"
 
-  BUTTON = [[Button.url("☎️ Support", "https://t.me/lunasupportgroup"), Button.url("📡 Updates", "https://t.me/ZeinzoProject")]]
+  BUTTON = [[Button.url("☎️ Support", "https://t.me/Rsupportprobot"), Button.url("📡 Updates", "https://t.me/Rsupportprobot")]]
   await tbot.send_file(event.chat_id, PHOTO, caption=LUNA,  buttons=BUTTON)
