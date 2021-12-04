@@ -82,7 +82,7 @@ async def inline_help_func(__help__):
             input_message_content=InputTextMessageContent(
                 "Click a button to get started."
             ),
-            thumb_url="https://telegra.ph/file/a03660425cd749faf0a4a.jpg",
+            thumb_url="https://telegra.ph/file/14edda404bb1a20443ee3.jpg",
             reply_markup=buttons,
         ),
     ]
@@ -94,27 +94,27 @@ async def alive_function(answers):
     buttons = InlineKeyboard(row_width=2)
     bot_state = "Dead" if not await app.get_me() else "Alive"
     buttons.add(
-        InlineKeyboardButton("Main bot", url=f"https://t.me/lunatapibot"),
+        InlineKeyboardButton("Main bot", url=f"https://t.me/R_reyrobot"),
         InlineKeyboardButton(
             "Go Inline!", switch_inline_query_current_chat=""
         ),
     )
 
     msg = f"""
-**[Luna❤️](https://t.me/lunatapibot):**
+**[R robot](https://t.me/R_reyrobot):**
 **RoBot:** `{bot_state}`
 **UserBot:** `Alive`
 **Python:** `{pyver.split()[0]}`
 **Pyrogram:** `{pyrover}`
 **MongoDB:** `{mongover}`
 **Platform:** `{sys.platform}`
-**Profiles:** [BOT](https://t.me/lunatapibot) | [UBOT](https://t.me/tdrki_1)
+**Profiles:** [BOT](https://t.me/R_reyrobot) | [UBOT](https://t.me/helzrip)
 """
     answers.append(
         InlineQueryResultArticle(
             title="Alive",
-            description="Check Luna Stats",
-            thumb_url="https://telegra.ph/file/a03660425cd749faf0a4a.jpg",
+            description="Check R robot Stats",
+            thumb_url="https://telegra.ph/file/96ba0cf8c7377df86655a.jpg",
             input_message_content=InputTextMessageContent(
                 msg, disable_web_page_preview=True
             ),
@@ -128,20 +128,20 @@ async def about_function(answers):
     buttons = InlineKeyboard(row_width=2)
     bot_state = "Dead" if not await app.get_me() else "About"
     buttons.add(
-        InlineKeyboardButton("Support", url=f"https://t.me/lunasupportgroup"),
-        InlineKeyboardButton("Channel", url=f"https://t.me/lunaupdate"),
+        InlineKeyboardButton("Support", url=f"https://t.me/Rsupportprobot"),
+        InlineKeyboardButton("Owner", url=f"https://t.me/helzrip"),
     )
 
     msg = f"""
-[Luna ✨](https://t.me/lunatapibot) 
-   Maintained by [X](t.me/tdrki_1)
+[R robot ✨](https://t.me/R_reyronot) 
+   Maintained by [X](t.me/helzrip)
 Built with using python-telegram-bot v13.7 Running on Python 3.9.7
 """
     answers.append(
         InlineQueryResultArticle(
             title="About",
-            description="About Luna",
-            thumb_url="https://telegra.ph/file/a03660425cd749faf0a4a.jpg",
+            description="About R robot",
+            thumb_url="https://telegra.ph/file/96ba0cf8c7377df86655a.jpg",
             input_message_content=InputTextMessageContent(
                 msg, disable_web_page_preview=True
             ),
