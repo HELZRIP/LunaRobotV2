@@ -7,7 +7,7 @@ __mod_name__ = "Inline"
 __help__ = """
 commands can be used by anyone in a group via inline.
 
-Usage: @R_reyrobot <func> <query>"""
+Usage: @Akeno <func> <query>"""
 
 
 @app.on_inline_query()
