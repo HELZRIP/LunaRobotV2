@@ -72,10 +72,10 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-LUNA_IMG = "https://telegra.ph/file/96ba0cf8c7377df86655a.jpg"
+LUNA_IMG = "https://telegra.ph/file/241871edb2fd3045f0678.jpg"
 
 PM_START_TEXT = """
-**hey I am R Robot** [ㅤ](https://telegra.ph/file/96ba0cf8c7377df86655a.jpg)
+**hey I am Akeno** [ㅤ](https://telegra.ph/file/241871edb2fd3045f0678.jpg)
 ️➖➖➖➖➖➖➖➖➖➖➖➖➖
 **I'm a Powerfull Group Manager Bot With Cool Modules. feel free to add me to your groups!**
 ️➖➖➖➖➖➖➖➖➖➖➖➖➖
@@ -84,7 +84,7 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="➕ Add R robot To Your group ➕", url="http://t.me/R_reyprobot?startgroup=true"),
+        InlineKeyboardButton(text="➕ Add Akeno To Your group ➕", url="http://t.me/Akeno_probot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="About", callback_data="luna_"),
@@ -101,12 +101,12 @@ buttons = [
 
 
 HELP_STRINGS = """
-**Main commands:**  [ㅤ](https://telegra.ph/file/61eba94a456859a864abc.jpg)
+**Main commands:**  [ㅤ](https://telegra.ph/file/241871edb2fd3045f0678.jpg)
 ❂ /start: Starts me! You've probably already used this.
 ❂ /help: Sends this message; I'll tell you more about myself.
 
 All commands can either be used with / or !.
-If you want to report any bugs or need any help with setting up Alina, reach us at here"""
+If you want to report any bugs or need any help with setting up Akeno, reach us at here"""
 
 
 
@@ -482,12 +482,8 @@ def luna_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Alina", url="https://t.me/rizexx"),
-                    InlineKeyboardButton(text="Nao", url="https://t.me/xgothboi"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Yui", url="https://t.me/Badboyanim"),
-                    InlineKeyboardButton(text="Luna", url="https://t.me/tdrki_1"),
+                    InlineKeyboardButton(text="Akeno", url="https://t.me/helzrip"),
+                    InlineKeyboardButton(text="okaeri", url="https://t.me/zenfrans"),
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="luna_basichelp"),
@@ -901,7 +897,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "I Aᴍ Aʟɪᴠᴇ 🔥")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "alive bruh 🔥")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
